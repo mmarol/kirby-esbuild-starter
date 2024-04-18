@@ -8,7 +8,7 @@
     "watch:js": "esbuild src/js/script.js --bundle --watch=forever --sourcemap=inline --outfile=assets/script.js",
     "build:css": "esbuild src/css/style.css --bundle --minify --outfile=assets/style.css",
     "watch:css": "esbuild src/css/style.css --bundle --watch=forever --sourcemap=inline --outfile=assets/style.css",
-    "browsersync": "browser-sync start --proxy 'esbuild-test.test' --files 'assets/style.css' 'site/**/*.php' 'site/**/**/*.php' --no-open --no-notify --no-inject-changes",
+    "browsersync": "browser-sync start --proxy 'kirby-esbuild-starter.test' --files 'assets/style.css' 'site/**/*.php' 'site/**/**/*.php' --no-open --no-notify --no-inject-changes",
     "build": "npm run build:js & npm run build:css",
     "watch": "npm run watch:js & npm run watch:css & npm run browsersync",
     "getcontent": "rsync -avzh --delete kirbyschool:~/test.com/content ."
