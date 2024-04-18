@@ -1,0 +1,30 @@
+{
+  "name": "lucia-monge-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio site for Lucia Monge 2024",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "esbuild src/js/script.js --bundle --minify --outfile=assets/script.js",
+    "watch:js": "esbuild src/js/script.js --bundle --watch=forever --sourcemap=inline --outfile=assets/script.js",
+    "build:css": "esbuild src/css/style.css --bundle --minify --outfile=assets/style.css",
+    "watch:css": "esbuild src/css/style.css --bundle --watch=forever --sourcemap=inline --outfile=assets/style.css",
+    "browsersync": "browser-sync start --proxy 'esbuild-test.test' --files 'assets/style.css' 'site/**/*.php' 'site/**/**/*.php' --no-open --no-notify --no-inject-changes",
+    "build": "npm run build:js & npm run build:css",
+    "watch": "npm run watch:js & npm run watch:css & npm run browsersync",
+    "getcontent": "rsync -avzh --delete kirbyschool:~/test.com/content ."
+  },
+  "keywords": [],
+  "author": "Mrityunjay Marol",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "cssnano": "^6.1.2",
+    "esbuild": "^0.20.2",
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^12.1.1"
+  }
+}
