@@ -20,7 +20,7 @@
 - Includes a bunch of Kirby blueprints and templates
 
 ## To-do
-- [ ] Clean up blueprints and templates
 - [ ] figure out rsync
 - [ ] figure out esbuild targets to compile for older browsers
 - [ ] see if PostCSS is actually necessary to include
+- [ ] see if `esbuild serve` can be used instead of browsersync
