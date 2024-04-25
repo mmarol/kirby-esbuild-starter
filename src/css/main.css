@@ -1,0 +1,6 @@
+@import 'base/test.css';
+@import 'base/base.css';
+
+body {
+  background-color: lightblue;
+}
