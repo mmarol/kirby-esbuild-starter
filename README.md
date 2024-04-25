@@ -1,5 +1,5 @@
 ## esbuild Kirby Starter
-- kirby installed through composer for easy updating
+- Kirby installed through composer for easy updating
 - esbuild and PostCSS for JS and CSS asset compiling
 - BrowserSync for live reloading
 
@@ -22,7 +22,5 @@
 - Includes a bunch of Kirby blueprints and templates.
 
 ## To-do
-- [ ] figure out rsync
 - [ ] figure out esbuild targets to compile for older browsers
 - [ ] see if PostCSS is actually necessary to include
-- [ ] see if `esbuild serve` can be used instead of browsersync
